@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1>Portfolio</h1>
+            <div class="options">
+                <a href="#Home">Home</a>
+                <a href="#Projects">Projects</a>
+                <a href="#About">About</a>
+                <a href="#Contact">Contact</a>
+            </div>
+            <select id="linkSelect">
+                <option value="#Home">Home</option>
+                <option value="#Projects">Projects</option>
+                <option value="#About">About</option>
+                <option value="#Contact">Contact</option>
+            </select>
+        </nav>
+        <!-- home section -->
+        <section id="Home">
+           <div class="home">  
+            <img src="Untitled.jpg">
+            <div class="main-content">
+                <h2><span>Hi,</span> I am Vikash kumar</h2>
+                <h3>I am a <span>Frontend</span> developer</h3>
+            </div>
+           </div>
+        </section>
+        <!-- projects-section -->
+        <section id="Projects">
+            <h4 style="text-align: center;padding: 2vh 0;">My projects</h4>
+            <div class="projects">
+                <div class="project" id="Weather">
+                    <div class="image"></div>
+                    <h3>Weather Application</h3>
+                    <button><a href="https://codewith-vikash.github.io/Weather-app/">Try Live</a></button>
+                </div>
+
+                <div class="project" id="List">
+                    <div class="image"></div>
+                    <h3>To Do List</h3>
+                    <button><a href="https://codewith-vikash.github.io/to-do-list/">Try Live</a></button>
+                </div>
+
+                <div class="project" id="Game">
+                    <div class="image"></div>
+                    <h3>R.P.C Game</h3>
+                    <button><a href="https://codewith-vikash.github.io/rock-paper-scissor-game/">Try Live</a></button>
+                </div>
+
+                <div class="project" id="Password">
+                    <div class="image"></div>
+                    <h3>Password Generator</h3>
+                    <button><a href="https://codewith-vikash.github.io/Random-password-generator/">Try Live</a></button>
+                </div>
+            </div>
+        </section>
+        <!-- about section -->
+        <section id="About">
+            <h3 style="text-align: center;padding: 2vh 0;">About Me</h3>
+            <div class="about">
+                <p style="text-align: center; padding: 5vh 5vw;">I am currently doing my bachelor,s degree in computer application (B.C.A) at Veer Kunwar Singh Univercity (Arah,Bihar). i am learning Web developmet , i have a deep knowledge of HTML , CSS , JAVASCRIPT and basic level knowledge of REACT</p>
+            </div>
+        </section>
+        <!-- contact -->
+        <section id="Contact">
+            <h3 style="text-align: center;padding: 2vh 0;">Contact Me</h3>
+            <div class="contact">
+                <div class="icon">
+                    
+                        <a href="https://github.com/CodeWith-Vikash"><i class="fa-brands fa-github"></i></a>
+                    <br>
+                    <br>
+                    <span>Git hub</span>
+                </div>
+                <div class="icon">
+                    
+                        <a href="https://www.linkedin.com/in/code-with-vikash/"><i class="fa-brands fa-linkedin"></i></a>
+                    <br>
+                    <br>
+                    <span>Linked in</span>
+                </div>
+                <div class="icon">
+                    
+                        <a href="https://vp3637637@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <br>
+                    <br>
+                    <span>Gmail</span>
+                </div>
+                <div class="icon">
+                    
+                    <i class="fa-solid fa-phone"></i>
+                    <br>
+                    <br>
+                    <span>8873478342</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        document.getElementById("linkSelect").addEventListener("change", function() {
+          var selectedOption = this.options[this.selectedIndex];
+          var link = selectedOption.value;
+          window.location.href = link;
+        });
+        </script>
+</body>
+</html>
